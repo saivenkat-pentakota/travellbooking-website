@@ -87,8 +87,9 @@
   flex-direction: column;
   gap: 1rem;
   position: absolute;
-  bottom: 18.5rem;
+  bottom: -6rem;
   width: 860px;
+  position: relative;
 }
 
 .details-row {

@@ -6,7 +6,7 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { AiFillInstagram } from "react-icons/ai";
 import HomePageImage from '../images/homepage-img.jpg';
 import Services from '../components/Services';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -146,7 +146,7 @@ function Home() {
       </div>
       <Testimonials />
       <Services />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

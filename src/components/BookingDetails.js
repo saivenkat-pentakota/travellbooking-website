@@ -28,6 +28,7 @@ function BookingDetails() {
   };
 
   return (
+    <>
     <div className="booking-summary-container">
       <div className="user-info">
         <div>
@@ -83,6 +84,7 @@ function BookingDetails() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
