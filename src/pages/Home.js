@@ -45,7 +45,7 @@ function Home() {
 
   // Function to format the date as "1/Jan/2025"
   const formatDate = (date) => {
-    const options = { day: 'numeric', month: 'short', year: 'numeric' };
+    const options = { day: '2-digit', month: 'short', year: 'numeric' };
     return new Intl.DateTimeFormat('en-GB', options).format(date);
   };
 
@@ -99,6 +99,7 @@ function Home() {
                 />
               )}
             </div>
+            <div class="vl"></div>
             <div className="home-booking-field">
               <label htmlFor="checkout">CHECK-OUT</label>
               <div className="home-calendar-container">
@@ -107,7 +108,7 @@ function Home() {
                   className="home-calendar-button"
                   onClick={() => setShowCheckOutCalendar(!showCheckOutCalendar)}
                 >
-                  {formatDate(checkOut)} {/* Using the custom formatDate function */}
+                  {formatDate(checkOut)}
                 </button>
                 <FaCaretDown
                   className="home-calendar-icon"
@@ -128,6 +129,7 @@ function Home() {
                 />
               )}
             </div>
+            <div class="vl"></div>
             <div className="home-booking-field home-room-selector">
               <label>ROOMS</label>
               <div className="home-room-controls">

@@ -52,9 +52,9 @@
   transition: color 0.3s;
 }
 
-.home-social-icons .home-social-icon:hover {
+/* .home-social-icons .home-social-icon:hover {
   color: #007BFF;
-}
+} */
 
 .home-intro-image img {
   width: 100%;
@@ -119,9 +119,9 @@
   text-align: left;
 }
 
-.home-calendar-button:hover {
+/* .home-calendar-button:hover {
   color: #007BFF;
-}
+} */
 
 .home-calendar-icon {
   font-size: 1.5rem;
@@ -214,7 +214,7 @@
 /* Booking Button */
 .home-book-button {
   width: 130px;
-  background-color: #2a6cb2;
+  background-color: rgba(32,109,153,255);
   color: #fff;
   border: none;
   padding: 1rem 1rem;
@@ -228,6 +228,7 @@
 .home-book-button:hover {
   background-color: #0056b3;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

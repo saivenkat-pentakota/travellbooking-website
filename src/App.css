@@ -7,3 +7,8 @@ body {
 * {
   text-decoration: none;
 }
+
+.vl {
+  border-left: 1px solid lightgray;
+  height: 90px;
+}

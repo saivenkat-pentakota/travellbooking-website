@@ -20,7 +20,7 @@ function BookingDetails() {
 
   const formatDate = (date) => {
     try {
-      const options = { year: 'numeric', month: 'short', day: 'numeric' };
+      const options = { year: '2-digit', month: 'short', day: 'numeric' };
       return new Date(date).toLocaleDateString('en-GB', options); // '1 Jan 2025'
     } catch {
       return 'Invalid Date';
@@ -61,10 +61,12 @@ function BookingDetails() {
             <h4>CHECK-IN</h4>
             <p>{formatDate(checkIn)}</p>
           </div>
+          <div class="vl"></div>
           <div className="detail">
             <h4>CHECK-OUT</h4>
             <p>{formatDate(checkOut)}</p>
           </div>
+          <div class="vl"></div>
           <div className="detail">
             <h4>ROOMS</h4>
             <p>{rooms}</p>

@@ -77,7 +77,7 @@ function BookingForm() {
 
   // Function to format the date as "1/Jan/2025"
   const formatDate = (date) => {
-    const options = { day: 'numeric', month: 'short', year: 'numeric' };
+    const options = { day: '2-digit', month: 'short', year: 'numeric' };
     return new Intl.DateTimeFormat('en-GB', options).format(date);
   };
 
@@ -193,6 +193,7 @@ function BookingForm() {
                 />
               )}
             </div>
+            <div class="vl"></div>
             <div className="editable-field">
               <label htmlFor="checkOut">Check-Out</label>
               <div className="home-calendar-container">
@@ -222,6 +223,7 @@ function BookingForm() {
                 />
               )}
             </div>
+            <div class="vl"></div>
             <div className="editable-field">
               <label>Rooms</label>
               <div className="room-controls">
