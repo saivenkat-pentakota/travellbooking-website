@@ -43,7 +43,7 @@ function BookingDetails() {
         </div>
         <div className="order-status">
           <div className="status-icon">
-            <i className="checkmark">✔</i>
+            <i className="checkmark">&#10003;</i>
           </div>
           <div>
             <p className='order-complete' style={{fontSize:'24px',fontWeight:'bold',color:'black',marginBottom:'10px'}}>Order Complete</p>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import { FaFacebook, FaInstagram, FaCaretDown } from 'react-icons/fa'; 
+import { FaFacebook, FaCaretDown } from 'react-icons/fa'; 
+import { AiFillInstagram } from "react-icons/ai";
 import HomePageImage from '../images/homepage-img.jpg';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
@@ -59,7 +60,7 @@ function Home() {
             <p>India's first true digital tourism ecosystem</p>
             <div className="home-social-icons">
               <FaFacebook className="home-social-icon" />
-              <FaInstagram className="home-social-icon" />
+              <AiFillInstagram className="home-social-icon" />
             </div>
           </div>
           <div className="home-intro-image">

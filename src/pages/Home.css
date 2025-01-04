@@ -70,7 +70,7 @@
 .home-booking-section {
   width: 800px;
   position: absolute;
-  bottom: 4.5rem;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
