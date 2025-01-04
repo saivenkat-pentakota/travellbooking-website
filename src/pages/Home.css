@@ -1,0 +1,252 @@
+/* General Styles */
+.homepage-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  width: auto;
+  height: auto;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Intro Section */
+.home-intro-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  background-color: #f9f9f9;
+  padding-bottom: 5rem; 
+}
+
+.home-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 0 2rem 2rem;
+}
+
+.home-intro-text h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.home-intro-text p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.home-social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.home-social-icons .home-social-icon {
+  font-size: 2.8rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.home-social-icons .home-social-icon:hover {
+  color: #007BFF;
+}
+
+.home-intro-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  image-rendering: auto;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Booking Section */
+.home-booking-section {
+  width: 800px;
+  position: absolute;
+  bottom: 6.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem;
+  border-radius: 8px;
+}
+
+.home-booking-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-booking-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-booking-field label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.home-calendar-container {
+  display: flex;
+  align-items: center;
+}
+
+.home-calendar-button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.home-calendar-button:hover {
+  color: #007BFF;
+}
+
+.home-calendar-icon {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Calendar Container */
+.react-calendar {
+  position: absolute;
+  z-index: 10;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem; /* Adjust padding for better spacing */
+}
+
+/* Style the month and year header */
+.react-calendar__navigation {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+}
+
+/* Style the day numbers */
+.react-calendar__tile {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.react-calendar__tile:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Additional customization for month names if needed */
+.react-calendar__month-view__month {
+  font-weight: bold;
+}
+
+/* Room Selector */
+.home-room-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-room-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-room-controls button {
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-room-controls button:hover {
+  background-color: #f0f0f0;
+}
+
+.home-room-controls span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+/* Booking Button */
+.home-book-button {
+  width: 130px;
+  background-color: #2a6cb2;
+  color: #fff;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.home-book-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-intro-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-booking-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .home-booking-section {
+    position: static;
+    bottom: 0;
+    transform: none;
+    margin-top: 4rem;
+    width: 90%;
+  }
+}
